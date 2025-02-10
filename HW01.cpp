@@ -1,7 +1,8 @@
 // Name: Tommy Townsen
 // blazerID: ttownsen
 // Assignment: CS401 HW01
-
+// To Compile: gcc -o HW01 HW01.c or make
+// To Run:./HW01 or make run
 #include <iostream>
 #include <vector>
 #include <string>
