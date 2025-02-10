@@ -16,6 +16,10 @@ public:
     InventorySystem(int productID, string name, float price, int amount_in_inventory)
         : productID(productID), name(name), price(price), amount_in_inventory(amount_in_inventory) {}
 
+    virtual ~InventorySystem() {
+        // Destructor implementation (if needed)
+    }
+
     virtual void display_info() {
         cout << "Product ID: " << productID << ", Name: " << name << ", Price: $" << price
              << ", Available: " << amount_in_inventory << endl;
@@ -140,7 +144,7 @@ public:
 
 // Store class to manage products
 class Store {
-private:
+public:
     vector<InventorySystem*> products;
 
 public:
