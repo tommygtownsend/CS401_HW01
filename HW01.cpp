@@ -59,7 +59,7 @@ public:
     }
 };
 
-// Derived class for Indoor Sports category
+// Chaild class for Indoor Sports category
 class IndoorSports : public InventorySystem {
 public:
     // Constructor to initialize indoor sports products
@@ -78,7 +78,7 @@ public:
 // Volleyball subclass
 class Volleyball : public IndoorSports {
 private:
-    string type_of_item;  // Type of volleyball item (e.g., Ball or Net)
+    string type_of_item;  // Type of volleyball item 
 public:
     // Constructor to initialize volleyball product
     Volleyball(int productID, string name, float price, int amount_in_inventory, string type_of_item)
@@ -91,7 +91,7 @@ public:
     }
 };
 
-// Basketball subclass (similar to Volleyball)
+// Basketball subclass 
 class Basketball : public IndoorSports {
 private:
     string type_of_item;
@@ -119,7 +119,7 @@ public:
     }
 };
 
-// Camping subclass (outdoor sports)
+// Camping subclass 
 class Camping : public OutdoorSports {
 private:
     string type_of_item;
@@ -133,7 +133,7 @@ public:
     }
 };
 
-// Soccer subclass (outdoor sports)
+// Soccer subclass 
 class Soccer : public OutdoorSports {
 private:
     string type_of_item;
@@ -147,7 +147,7 @@ public:
     }
 };
 
-// Golf subclass (outdoor sports)
+// Golf subclass 
 class Golf : public OutdoorSports {
 private:
     string type_of_item;
@@ -234,6 +234,7 @@ int main() {
     store.add_product(new Soccer(501, "Soccer Cleats", 49.99, 15, "Cleats"));
 
     // User interface: Basic Menu with options
+    // Ran out of time here and there are bugs
     int choice;
     while (true) {
         cout << "\n--- Store Menu ---" << endl;
